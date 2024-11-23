@@ -30,7 +30,7 @@ const NoteList = () => {
   const fetchNotes = async () => {
     try {
       const response = await axios.get(
-        "https://personal-notemanager-backend.onrender.com/notes"
+        "https://backend-repo-dwt1.onrender.com/notes"
       );
       setNotes(response.data);
     } catch (error) {
@@ -41,7 +41,7 @@ const NoteList = () => {
   const deleteNote = async (id) => {
     try {
       await axios.delete(
-        `https://personal-notemanager-backend.onrender.com/notes/${id}`
+        `https://backend-repo-dwt1.onrender.com/notes/${id}`
       );
       fetchNotes();
     } catch (error) {

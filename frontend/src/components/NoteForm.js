@@ -26,7 +26,7 @@ const NoteForm = () => {
   // Fetch existing data when the component is mounted
   useEffect(() => {
     axios
-      .get(`https://personal-notemanager-backend.onrender.com/notes/${id}`)
+      .get(`https://backend-repo-dwt1.onrender.com/notes/${id}`)
       .then((res) => {
         setTitle(res.data.title); // Populate title from response
         setDescription(res.data.description); // Populate description
@@ -50,7 +50,7 @@ const NoteForm = () => {
 
     axios
       .put(
-        `https://personal-notemanager-backend.onrender.com/notes/${id}`,
+        `https://backend-repo-dwt1.onrender.com/notes/${id}`,
         updatedNote
       )
       .then((res) => {

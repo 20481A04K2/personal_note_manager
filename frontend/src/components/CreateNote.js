@@ -48,14 +48,14 @@ const CreateNote = ({ currentNote, onFormSubmit, resetEditing }) => {
       if (currentNote) {
         // Update existing note
         await axios.put(
-          `https://personal-notemanager-backend.onrender.com/notes/${currentNote._id}`,
+          `https://backend-repo-dwt1.onrender.com/notes/${currentNote._id}`,
           noteData
         );
         console.log("Note updated successfully");
       } else {
         // Create a new note
         await axios.post(
-          "https://personal-notemanager-backend.onrender.com/notes",
+          "https://backend-repo-dwt1.onrender.com/notes",
           noteData
         );
         console.log("Note created successfully");
